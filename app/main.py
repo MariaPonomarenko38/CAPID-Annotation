@@ -50,10 +50,7 @@ st.title("🔍 Context-Aware PII Annotation Tool")
 
 uploaded_file = st.file_uploader("Upload JSONL file", type=["jsonl"])
 
-PII_TYPES = [
-    "age", "name", "location", "education", "occupation", "finance",
-    "nationality", "family", "health", "sexual orientation", "religion", "other"
-]
+PII_TYPES = ["age", "contact", "education", "family", "finance", "health", "location", "name", "nationality", "occupation", "public organization", "sexual orientation"]
 
 # ---------- Load ----------
 if uploaded_file and "entries" not in st.session_state:
